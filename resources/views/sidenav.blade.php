@@ -1,57 +1,50 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
 
-@section('content')
-<div class="row">
-    <div class="col-sm-2">
-        <a href="/posts">Form</a>
-        <h1>SHIT</h1>
-        <div class="jumbotron">
-            <h1>why</h1>
-        </div>
-    </div>
-    <div class="col-sm-2">
-            <a class="btn btn-info" href="/posts" role="button">Go back</a>
-            <br><br>
-        <?php //@if($post->cover_image !== 'noimage.jpg')
-        //<img style="height:200px" src="/storage/cover_images/{{$post->cover_image}}">
-        //@endif
-        ?>
-        <h1>{{$post->title}}</h1>
-            <p>Catigory: {{$post->catigory}}</p>
-            <div class="jumbotron">
-        <p>{!! $post->body !!}</p>
-            </div>
-        <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
-        <hr>
-        @if(!Auth::guest())
-        @if(Auth::user()->id == $post->user_id)
-        <a href="/posts/{{$post->id}}/edit" class="btn btn-info">Edit Question</a>
-    
-        {!! Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'float-right']) !!}
-    
-        {{Form::hidden('_method', 'DELETE')}}
-        {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
-        {!!Form::close()!!}
-        @endif
-        @endif
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h1 style="color:grey"><br>Responses:</h1>
-            </div>
-            @if(count($comments) > 0)
-        @foreach($comments as $comment)
-        <div class="panel-body">
-        <h3>{{$comment->title}}</h3>
-        <p>{!! $comment->body !!}</p>
-        <small>Written by {{$comment->post->user->name}}</small>
-        <hr>
-    </div>
-    @endforeach
-    @else 
-        <h3 style="color:red">No Responses</h3>
-        @endif
-        </div>
-    @include('comments.create')
-    </div>
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+.main {
+    margin-left: 0px; /* Same width as the sidebar + left position in px */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/services">Information</a>
+  <a href="/posts">Form</a>
 </div>
-@endsection

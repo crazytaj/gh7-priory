@@ -24,7 +24,7 @@ Route::get('/laravel', function() {
 });
 Route::resource('comment', 'CommentsController');
 
-Route::resource('sidenav', 'PostsController');
+Route::resource('posts', 'PostsController');
 
 
 Auth::routes();

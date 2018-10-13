@@ -17,7 +17,7 @@
 </style>
 </head>
 
-<div class="jumbotron border border-dark">
+<div class="jumbotron border border-dark main">
 <h1>{{$title}}</h1> 
 <br>
 <h4>Pick your preferred language </h4>
