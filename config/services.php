@@ -15,8 +15,8 @@ return [
     */
 
     'mailgun' => [
-        'domain' => 'mg.gzghost.me',
-        'secret' => 'bd6d532c0ff2a2a0cd903c7eaf0ec800-bd350f28-a00dd35e',
+        'domain' => 'NAME',
+        'secret' => 'SECRETAPI',
     ],
 
     'ses' => [
