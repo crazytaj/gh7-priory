@@ -79,8 +79,26 @@ class PostsController extends Controller
         }
         $post->cover_image = $fileNameToStore;
         $post->save();
+        $emailbody = $post->body;
+        $emailhead = $post->title;
+        switch ($post->catigory) {
+            case 'credit':
+                $email_list = [];
+            break;
+            case 'visa':
+                $email_list = [];
+            break;
+            case 'housing':
+                $email_list = [];
+            case 'jobs':
+                $email_list = [];
+            break;
+            default:
+                $email_list = [];
+            break;
+        }
 
-        return redirect('/posts')->with('success', 'Post successfully created');
+        return redirect('/posts')->with('success', 'Question Successfully asked');
 
     }
 
