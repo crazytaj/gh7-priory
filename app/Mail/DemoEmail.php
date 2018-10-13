@@ -35,9 +35,9 @@ class DemoEmail extends Mailable
      */
     public function build()
     {
-        return $this->from('sender@example.com')
-                    ->view('mails.demo')
-                    ->text('mails.demo_plain')
+        return $this->from('question@immigration.form.com')
+                    
+                    ->text('mails.demo')
                     ->with(
                       [
                             'testVarOne' => '1',

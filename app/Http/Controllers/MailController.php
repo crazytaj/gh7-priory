@@ -7,14 +7,14 @@ use Illuminate\Support\Facades\Mail;
  
 class MailController extends Controller
 {
-    public function send()
+    public function send(Request $request)
     {
         $objDemo = new \stdClass();
-        $objDemo->demo_one = 'Demo One Value';
-        $objDemo->demo_two = 'Demo Two Value';
-        $objDemo->sender = 'SenderUserName';
-        $objDemo->receiver = 'ReceiverUserName';
+        $objDemo->demo_one = $request->title;
+        $objDemo->demo_two = $request->body;
+        $objDemo->demo_three = $request->name;
+        $objDemo->receiver = 'Immigration Service Helpers';
  
-        Mail::to("receiver@example.com")->send(new DemoEmail($objDemo));
+        Mail::to($request->email)->send(new DemoEmail($objDemo));
     }
 }
