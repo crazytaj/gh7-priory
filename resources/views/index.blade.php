@@ -29,7 +29,7 @@ function googleTranslateElementInit() {
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         
-    
+ <!--  
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">English</p> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" class="responsive" alt="American Flag"></a>
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">Français</p> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAFVBMVEX///8AI5XtKTkAFJJ6gbrzg4ntHTC7o1gDAAAA/klEQVR4nO3QSQ0AIAADsHH6l4yKPUhaCc2oWTs9586aOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHy4ckD5KrN4eD2boIAAAAASUVORK5CYII=" class="responsive" alt="French Flag"></a>
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">日本語</p> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png" class="responsive" alt="Japanese Flag"></a>
@@ -41,7 +41,7 @@ function googleTranslateElementInit() {
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">Português</p> <img src="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/3707320/580/387/m1/fpnw/wm0/portugal-.jpg?1512759149&s=4bfeb81ec0be15a20cb3f54bfedc549c" class="responsive" alt="Portuguese Flag"></a>
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">Polski</p> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAADFBMVEX////cFDzup6/bAC47xqeuAAAA0UlEQVR4nO3QMQHAMAzAsLTjz3kI4qO3BEEzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPLms5mM1h5WcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICf8zMtmEUHJBe8AAAAASUVORK5CYII=" class="responsive" alt="Polish Flag"></a>
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">Filipino</p> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/383px-Flag_of_the_Philippines.svg.png" class="responsive" alt="Flag of the Philippines"></a>
-
+BUTTONS FOR SELECTING LANGUAGE - DOES NOT WORK WITHOUT CLOUD TRANSLATION API (WHICH REQUIRES A CREDIT CARD)-->
 <br> <br> <br>
 
 @guest
