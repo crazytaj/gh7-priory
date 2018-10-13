@@ -68,6 +68,7 @@ class PostsController extends Controller
         }
 
         $post = new Post;
+        $post->catigory = $request->input('topic');
         $post->title = $request->input('title');
         $post->body = $request->input('body');
         $post->user_id = auth()->user()->id;

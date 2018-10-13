@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UpdateEmaillistTable extends Migration
+class AddCatigoryToPosts extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class UpdateEmaillistTable extends Migration
      */
     public function up()
     {
-        Schema::table('emaillist', function($table) {
+        Schema::table('posts', function($table) {
             $table->string('catigory');
         });
     }

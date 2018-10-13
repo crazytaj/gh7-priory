@@ -8,6 +8,10 @@
         {{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Title'])}}
     </div>
     <div class="form-group">
+        {{Form::label('catigory', 'Select Catigory')}}
+        {{Form::select('topic', ['credit' => 'Credit Score', 'visa' => 'Visa or Greencards', 'housing' => 'Housing Solutions', 'jobs' => 'Employment', 'integration' => 'Community Integration'])}}
+    </div>
+    <div class="form-group">
             {{Form::label('body', 'Body')}}
             {{Form::textarea('body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Body Text'])}}
     </div>

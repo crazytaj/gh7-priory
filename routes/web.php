@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Use Illuminate\Mail\Mailable;
 
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
@@ -20,14 +21,13 @@ Route::get('/php', function () {
 Route::get('/laravel', function() {
     return view('welcome');
 });
-Route::get('/mail', function () {
-    return view('mail');
-});
 Route::resource('comment', 'CommentsController');
-Route::resource('email', 'EmailController');
 
 Route::resource('posts', 'PostsController');
 
 Auth::routes();
 
+Route::get('sendbasicemail','EmailController@basic_email');
+Route::get('sendhtmlemail','EmailController@html_email');
+Route::get('sendattachmentemail','EmailController@attachment_email');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
