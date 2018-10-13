@@ -22,7 +22,7 @@
 </head>
 <body>
         @include('inc.navbar')
-
+        @include('sidenav')
         <div class="container">
             @include('inc.messages')
             @yield('content')
