@@ -20,6 +20,9 @@ Route::get('/php', function () {
 Route::get('/laravel', function() {
     return view('welcome');
 });
+Route::get('/mail', function () {
+    return view('mail');
+});
 Route::resource('comment', 'CommentsController');
 Route::resource('email', 'EmailController');
 

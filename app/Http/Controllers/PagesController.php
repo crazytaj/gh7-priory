@@ -11,6 +11,10 @@ class PagesController extends Controller
         return view('index')->with('title', $title);
     }
 
+    public function mail() {
+        return view('mail');
+    }
+
     public function about() {
         $title = 'About Us';
         return view('about')->with('title', $title);
