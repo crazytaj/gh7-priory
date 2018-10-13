@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER', 'maildriver'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'immigrationhelp@mg.gzghost.me'),
+        'name' => env('MAIL_FROM_NAME', 'Tariq'),
     ],
 
     /*
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => env('postmaster@mg.gzghost.me'),
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => env('dacc4935a28e1ca9404497c6c9345f39-bd350f28-59a483f3'),
 
     /*
     |--------------------------------------------------------------------------
@@ -119,5 +119,4 @@ return [
             resource_path('views/vendor/mail'),
         ],
     ],
-
 ];

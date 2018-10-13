@@ -11,6 +11,20 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'PagesController@index');
+Route::get('/about', 'PagesController@about');
+Route::get('/services', 'PagesController@services');
+Route::get('/php', function () {
+    return redirect('http://localhost/phpmyadmin');
+});
+Route::get('/laravel', function() {
     return view('welcome');
 });
+Route::resource('comment', 'CommentsController');
+Route::resource('email', 'EmailController');
+
+Route::resource('posts', 'PostsController');
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
