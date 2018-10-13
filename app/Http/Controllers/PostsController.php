@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Comment;
+use Auth;
 use Illuminate\Support\Facades\Storage;
 
 class PostsController extends Controller
@@ -16,7 +17,7 @@ class PostsController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' =>['index', 'show']]);
+        //$this->middleware('auth', ['except' =>['index', 'show']]);
     }
     /**
      * Display a listing of the resource.
@@ -71,7 +72,11 @@ class PostsController extends Controller
         $post->catigory = $request->input('topic');
         $post->title = $request->input('title');
         $post->body = $request->input('body');
+        if (!Auth::guest()) {
         $post->user_id = auth()->user()->id;
+        } else {
+            $post->user_id = '1';
+        }
         $post->cover_image = $fileNameToStore;
         $post->save();
 
