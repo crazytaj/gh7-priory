@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Ask a Question</h1>
+<h1>Add an Email to the list</h1>
 {!! Form::open(['action' => 'MailController@store', 'method' => 'POST']) !!}
     <div class="form-group">
         {{Form::label('email', 'Email')}}
