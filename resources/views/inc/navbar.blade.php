@@ -18,14 +18,14 @@
                       <a class="nav-link" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="/mail">Mail-temp</a>
-                          </li>
-                    <li class="nav-item">
                       <a class="nav-link" href="/services">Information</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/posts">Form</a>
+                      <a class="nav-link" href="/posts/create">Ask A Question</a>
                     </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="/posts">Answer A Question</a>
+                          </li>
               </ul>
 
               <!-- Right Side Of Navbar -->

@@ -22,7 +22,7 @@
 </head>
 
 <div class="jumbotron p-4 main">
-<h2>Welcome to Imigration Information Intigration hub (or Triple I)</h2> 
+<h2>Welcome to Imigration Information Intigration Hub (or Triple I)</h2> 
 <p>A hub that contains tons of resources in order to help immigrants fully intergrate into our society, for their benifit and ours</p>
 <br>
  <!--  
@@ -49,7 +49,6 @@ BUTTONS FOR SELECTING LANGUAGE - DOES NOT WORK WITHOUT CLOUD TRANSLATION API (WH
  </a></p>
 @endif
 </div>
-<br><br><br>
 <div class="jumbotron p-2 main" style="width:500px;">
 <img src="{{ asset('homepage.jpg') }}" alt="Sun Set" height="auto" width="auto">
 

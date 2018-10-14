@@ -61,7 +61,7 @@
     left: 0;
     position: fixed;
     cursor: pointer;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 /* On smaller screens, where height is less than ___px, change the style of the sidebar (less padding and a smaller font size) */

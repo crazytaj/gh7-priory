@@ -83,7 +83,7 @@ class EntrysController extends Controller
     {
         $post = Entry::find($id);
 
-        if(auth()->user()->id !==$post->user_id){
+        if(auth()->user()->id != '4'){
             return redirect('/posts')->with('error', 'You can not edit other peoples posts');
         }
 

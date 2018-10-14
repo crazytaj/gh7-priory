@@ -1,4 +1,4 @@
-<br>
+<br><br>
     <div id="mySidenavs" class="sidenav rounded-left">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="/" class="override">Home</a>

@@ -2,7 +2,7 @@
 namespace App\Http\Controllers;
  
 use App\Http\Controllers\Controller;
-use App\Mail\DemoEmail;
+use App\Mail\ImmigrationQuestion;
 use Illuminate\Http\Request;
 use App\Email;
 use App\Post;
@@ -26,7 +26,7 @@ class MailController extends Controller
         $objDemo->sender = 'Classified';
         $objDemo->receiver = 'Immigration Service Helpers';
  
-        Mail::to($email_list)->send(new DemoEmail($objDemo));
+        Mail::to($email_list)->send(new ImmigrationQuestion($objDemo));
         return redirect('/posts')->with('success', 'Question successfully asked!');
     }
     public function store(Request $request)

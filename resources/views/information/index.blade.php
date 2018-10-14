@@ -6,6 +6,9 @@
 @endif
 @if(count($posts) > 0)
     @foreach($posts as $post)
+    @if(!Auth::guest())
+        <h1><a href="/entry/{{$post->id}}/edit" class="btn btn-info float-right">Edit Entry</a></h1>
+    @endif
     <br><br>
     <?php //@if($post->cover_image !== 'noimage.jpg')
     //<img style="height:200px" src="/storage/cover_images/{{$post->cover_image}}">

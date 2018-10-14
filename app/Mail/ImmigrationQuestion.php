@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
  
-class DemoEmail extends Mailable
+class ImmigrationQuestion extends Mailable
 {
     use Queueable, SerializesModels;
      
@@ -37,11 +37,6 @@ class DemoEmail extends Mailable
     {
         return $this->from('question@immigration.form.com')
                     
-                    ->text('mails.demo')
-                    ->with(
-                      [
-                            'testVarOne' => '1',
-                            'testVarTwo' => '2',
-                      ]);
+                    ->text('mails.demo');
     }
 }
