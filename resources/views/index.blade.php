@@ -22,7 +22,7 @@
 </head>
 
 <div class="jumbotron p-4 main">
-<h2>Welcome to Imigration Information Integration Hub (or Triple I)</h2> 
+<h2>Welcome to Immigration Information Integration Hub (or Triple I)</h2> 
 <p>A hub that contains many resources in order to help immigrants fully intergrate into our society, for their benefit and ours</p>
 <br>
  <!--  
