@@ -50,6 +50,7 @@
     cursor: pointer;
     right: 0;
     margin-right: 30px;
+
     
 }
 
@@ -59,16 +60,24 @@
     padding: 0px 10px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+/* On smaller screens, where height is less than ___px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-width: 700px) {
     .sidenav {padding-top: 15px;
-                height: 70%}
+                height: 70%;
+                
+                }
     .sidenav a {font-size: 18px;}
-}
+
+    .openbtn {font-size: 25px;}
+    }
 @media screen and (max-width: 500px) {
     .sidenav {padding-top: 10px;
-                height: 65%}
+                height: 65%;
+                
+                    }
     .sidenav a {font-size: 13px;}
+
+    .openbtn {font-size: 17px;}
 }
 </style>
 </head>
@@ -84,7 +93,8 @@
 
 <!-- Open Button -->
 
-<span class="openbtn" onclick="openNav()">&#9776; Expand</span> 
+<span class="openbtn" onclick="openNav()">&#9776; Expand</span>
+ 
 
 
 <script>
