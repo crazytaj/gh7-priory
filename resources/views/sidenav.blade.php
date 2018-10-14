@@ -16,6 +16,10 @@
 .override {
     color: #e0e1e2 !important;
 }
+
+.subclasses {
+    margin-bottom: 1px !important;
+}
 /* The navigation menu links */
 .sidenav a {
     padding: 6px 8px 6px 16px;
@@ -23,7 +27,7 @@
     font-size: 22px;
     color: #919396;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     margin-right: 5px;
     transition: 0.3s;
 }

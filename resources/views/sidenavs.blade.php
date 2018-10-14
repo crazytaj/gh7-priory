@@ -4,15 +4,16 @@
             <a href="/" class="override">Home</a>
             <a href="/about">About</a>
             <a href="/services">Information:</a>
-            <a style="font-size: 14px;" href="/services#asylum">&nbsp;&nbsp;&nbsp;&nbsp;*Asylum/Refugee</a>
-            <a style="font-size: 14px;" href="/services#green">&nbsp;&nbsp;&nbsp;&nbsp;*GreenCard</a>
-            <a style="font-size: 14px;" href="/services#natural">&nbsp;&nbsp;&nbsp;&nbsp;*Naturalization</a>
-            <a style="font-size: 14px;" href="/services#visa">&nbsp;&nbsp;&nbsp;&nbsp;*Visas</a>
-            <a style="font-size: 14px;" href="/services#credit">&nbsp;&nbsp;&nbsp;&nbsp;*CreditScores</a>
-            <a style="font-size: 14px;" href="/services#house">&nbsp;&nbsp;&nbsp;&nbsp;*Housing</a>
-            <a style="font-size: 14px;" href="/services#source">&nbsp;&nbsp;&nbsp;&nbsp;*Sources</a>
-            <a href="/posts">Form</a>
-            <div id="google_translate_element"></div><script type="text/javascript">
+            <a class="subclasses" style="font-size: 12px;" href="/services#asylum">Asylum/Refugee</a>
+            <a class="subclasses" style="font-size: 12px;" href="/services#green">GreenCard</a>
+            <a class="subclasses" style="font-size: 12px;" href="/services#natural">Naturalization</a>
+            <a class="subclasses" style="font-size: 12px;" href="/services#visa">Visas</a>
+            <a class="subclasses" style="font-size: 12px;" href="/services#credit">Credit Scores</a>
+            <a class="subclasses" style="font-size: 12px;" href="/services#house">Housing</a>
+            <a class="subclasses" style="font-size: 12px;" href="/services#source">Sources</a>
+            <a href="/posts">Forum</a>
+            <br>
+            <div id="google_translate_element" style="margin-right: 6px;"></div><script type="text/javascript">
             function googleTranslateElementInit() {
             new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
             }

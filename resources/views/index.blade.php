@@ -22,8 +22,8 @@
 </head>
 
 <div class="jumbotron p-4 main">
-<h2>Welcome to Imigration Information Intigration Hub (or Tripple I)</h2> 
-<p>A hub that contains tons of resources in order to help immigrants fully intergrate into our society, for their benifit and ours</p>
+<h2>Welcome to Imigration Information Integration Hub (or Triple I)</h2> 
+<p>A hub that contains many resources in order to help immigrants fully intergrate into our society, for their benefit and ours</p>
 <br>
  <!--  
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">English</p> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" class="responsive" alt="American Flag"></a>
