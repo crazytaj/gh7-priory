@@ -1,22 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
+@if(!Auth::guest())
 <h1>Entries <a href="/posts/create" class="btn btn-primary float-right">Add Entry</a></h1>
+@endif
 @if(count($posts) > 0)
     @foreach($posts as $post)
-    <h1></h1>
-        <div class="card-block card bg-light">
-            <div class="row">
-                <div class="col-md-4 col-sm-4">
-                <img style="height:100px" src="/storage/cover_images/{{$post->cover_image}}">
-                </div>
-                <div class="col-md-8 col-sm-8">
-                        <br>
-                        <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
-                        <small>Last Updated on {{$post->created_at}} by {{$post->user->name}}</small>
-                        </div>
-                </div>
-            </div>
+    <br><br>
+    <?php //@if($post->cover_image !== 'noimage.jpg')
+    //<img style="height:200px" src="/storage/cover_images/{{$post->cover_image}}">
+    //@endif
+    ?>
+    <h1>{{$post->title}}</h1>
+        <div class="jumbotron">
+    <p>{!! $post->body !!}</p>
+        </div>
+    <small>Written on {{$post->created_at}}</small>
+    <hr>
             
     @endforeach
     {{$posts->links()}}

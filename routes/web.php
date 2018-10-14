@@ -14,7 +14,7 @@ Use Illuminate\Mail\Mailable;
 
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
-Route::get('/services', 'PagesController@services');
+Route::get('/services', 'EntrysController@index');
 Route::get('/php', function () {
     return redirect('http://localhost/phpmyadmin');
 });
@@ -26,6 +26,7 @@ Route::get('/laravel', function() {
 });
 Route::resource('comment', 'CommentsController');
 
+Route::resource('entry', 'EntrysController');
 Route::resource('posts', 'PostsController');
 Route::get('test', function () {
     return view('test');
