@@ -3,7 +3,11 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="/" class="override">Home</a>
             <a href="/about">About</a>
-            <a href="/services">Information:</a>
+        
+
+            <a href="" data-toggle="collapse" data-target="#collapsible">Information</a>
+
+            <div id="collapsible" class="collapse">
             <a class="subclasses" style="font-size: 12px;" href="/services#asylum">Asylum/Refugee</a>
             <a class="subclasses" style="font-size: 12px;" href="/services#green">GreenCard</a>
             <a class="subclasses" style="font-size: 12px;" href="/services#natural">Naturalization</a>
@@ -11,6 +15,8 @@
             <a class="subclasses" style="font-size: 12px;" href="/services#credit">Credit Scores</a>
             <a class="subclasses" style="font-size: 12px;" href="/services#house">Housing</a>
             <a class="subclasses" style="font-size: 12px;" href="/services#source">Sources</a>
+            </div>
+
             <a href="/posts">Forum</a>
             <br>
             <div id="google_translate_element" style="margin-right: 6px;"></div><script type="text/javascript">
