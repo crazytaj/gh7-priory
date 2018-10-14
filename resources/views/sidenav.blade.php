@@ -2,38 +2,46 @@
 <html>
 <head>
 <style>
-body {
-    font-family: "Lato", sans-serif;
-}
-
 .sidenav {
-    width: 130px;
-    position: fixed;
-    z-index: 1;
-    top: 20px;
-    left: 10px;
-    background: #eee;
-    overflow-x: hidden;
-    padding: 8px 0;
-}
+    height: 80%; /* Full-height: remove this if you want "auto" height */
+    width: auto; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #343a40; /* Dark gray */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    text-align: right;
+    margin-top: 100px;
 
+}
+.override {
+    color: #e0e1e2 !important;
+}
+/* The navigation menu links */
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #2196F3;
+    color: #919396;
     display: block;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
+/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #064579;
+    color: #f1f1f1;
 }
 
+/* Style page content */
 .main {
-    margin-left: 0px; /* Same width as the sidebar + left position in px */
+    margin-right: auto; /* Same as the width of the sidebar */
     padding: 0px 10px;
 }
 
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -42,8 +50,8 @@ body {
 </head>
 <body>
 
-<div class="sidenav">
-  <a href="/">Home</a>
+<div class="sidenav rounded-left" >
+  <a href="/" class="override">Home</a>
   <a href="/about">About</a>
   <a href="/services">Information</a>
   <a href="/posts">Form</a>
