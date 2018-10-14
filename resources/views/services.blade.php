@@ -21,7 +21,7 @@
 </script>
 
 
-<div class="jumbotron border border-dark main">
+<div class="jumbotron">
     <h1>Immigration Information</h1> 
     <br>
     <h4>Information for those who need it most. For more specific questions, access the forums section of the website.</h4>
