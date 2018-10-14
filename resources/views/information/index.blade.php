@@ -11,7 +11,7 @@
     //<img style="height:200px" src="/storage/cover_images/{{$post->cover_image}}">
     //@endif
     ?>
-    <h1>{{$post->title}}</h1>
+    <h1>{{$post->title}}:</h1>
         <div class="jumbotron">
     <p>{!! $post->body !!}</p>
         </div>
@@ -19,7 +19,6 @@
     <hr>
             
     @endforeach
-    {{$posts->links()}}
 @else 
 <h3>No Entries</h3>
 @endif
