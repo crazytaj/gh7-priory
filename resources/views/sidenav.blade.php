@@ -3,7 +3,7 @@
 <head>
 <style>
 .sidenav {
-    height: 80%; /* Full-height: remove this if you want "auto" height */
+    height: 75%; /* Full-height: remove this if you want "auto" height */
     width: auto; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
@@ -42,9 +42,15 @@
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
+@media screen and (max-width: 700px) {
+    .sidenav {padding-top: 15px;
+                height: 70%}
     .sidenav a {font-size: 18px;}
+}
+@media screen and (max-width: 500px) {
+    .sidenav {padding-top: 10px;
+                height: 65%}
+    .sidenav a {font-size: 13px;}
 }
 </style>
 </head>
