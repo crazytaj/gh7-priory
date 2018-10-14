@@ -5,7 +5,7 @@
             <a href="/about">About</a>
         
 
-            <a href="" data-toggle="collapse" data-target="#collapsible">Information</a>
+            <a href="" data-toggle="collapse" data-target="#collapsible">Information:</a>
 
             <div id="collapsible" class="collapse">
             <a class="subclasses" style="font-size: 12px;" href="/services#asylum">Asylum/Refugee</a>
