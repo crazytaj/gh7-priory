@@ -4,11 +4,6 @@
 <head>
 <style>
 
-.background {
-    background-size:cover;
-    background-image: url(http://catholicnewstt.com/wp-content/uploads/2018/01/holding-hands.jpg)
-}
-
 .responsive {
     max-height: 70%;
     max-width: 70%;
@@ -21,26 +16,16 @@
     text-align: center;
 }
 
-.jumbotron {
-    margin-bottom: 0px;
-    background-position: 0% 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow: black 0.3em 0.3em 0.3em;
+
 }
 </style>
 </head>
-
-
-<div class = "background">
 
 <div class="jumbotron p-4 main">
 <h1>{{$title}}</h1> 
 <br>
 <h4>Pick your preferred language </h4>
-
-
+<br> <br>
 
 <div id="google_translate_element"></div><script type="text/javascript">
 function googleTranslateElementInit() {
@@ -73,6 +58,10 @@ BUTTONS FOR SELECTING LANGUAGE - DOES NOT WORK WITHOUT CLOUD TRANSLATION API (WH
  </a></p>
 @endif
 </div>
+<br><br><br>
+<div class="jumbotron p-2 main" style="width:500px;">
+<img src="http://catholicnewstt.com/wp-content/uploads/2018/01/holding-hands.jpg" alt="Sun Set" height="auto" width="auto">
 
 </div>
+
 @endsection
