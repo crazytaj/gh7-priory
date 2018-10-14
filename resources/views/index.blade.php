@@ -23,7 +23,7 @@
 
 <div class="jumbotron p-4 main">
 <h2>Welcome to Imigration Information Intigration hub (or Triple I)</h2> 
-<p>A hub that contains tons of resources in order to help immigrants fully intergrate into our society</p>
+<p>A hub that contains tons of resources in order to help immigrants fully intergrate into our society, for their benifit and ours</p>
 <br>
  <!--  
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">English</p> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" class="responsive" alt="American Flag"></a>
@@ -51,7 +51,7 @@ BUTTONS FOR SELECTING LANGUAGE - DOES NOT WORK WITHOUT CLOUD TRANSLATION API (WH
 </div>
 <br><br><br>
 <div class="jumbotron p-2 main" style="width:500px;">
-<img src="http://catholicnewstt.com/wp-content/uploads/2018/01/holding-hands.jpg" alt="Sun Set" height="auto" width="auto">
+<img src="{{ asset('homepage.jpg') }}" alt="Sun Set" height="auto" width="auto">
 
 </div>
 

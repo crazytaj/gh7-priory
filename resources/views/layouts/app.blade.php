@@ -3,6 +3,9 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
         <link rel="shortcut icon" href="{{ asset('favicon.png') }}">
+        @include('sidenav')
+        @include('logo')
+        
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -20,12 +23,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    @include('sidenav')
+    @include('inc.navbar')
+    @include('sidenavs')
 </head>
 <body>
 
-        @include('inc.navbar')
-        @include('sidenavs')
+        
         <div class="container">
             @include('inc.messages')
             @yield('content')

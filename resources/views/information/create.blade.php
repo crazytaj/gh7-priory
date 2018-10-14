@@ -8,6 +8,10 @@
         {{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Title'])}}
     </div>
     <div class="form-group">
+                {{Form::label('stub', 'Url Stub')}}
+                {{Form::text('stub', '', ['class' => 'form-control', 'placeholder' => 'Url Stub (sidenav linking)'])}}
+            </div>
+    <div class="form-group">
             {{Form::label('body', 'Body')}}
             {{Form::textarea('body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Body Text'])}}
     </div>

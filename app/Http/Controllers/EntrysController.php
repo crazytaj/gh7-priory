@@ -53,6 +53,7 @@ class EntrysController extends Controller
         $post = new Entry;
         $post->title = $request->input('title');
         $post->body = $request->input('body');
+        $post->urlstub = $request->input('stub');
         $post->save();
 
 

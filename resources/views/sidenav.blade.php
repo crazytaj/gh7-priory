@@ -20,7 +20,7 @@
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     color: #919396;
     display: block;
     margin-bottom: 5px;
@@ -36,7 +36,7 @@
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 22px;
     font-size: 36px;
     margin-right: 100px;
 }
@@ -55,6 +55,13 @@
 .main {
     margin-right: auto; /* Same as the width of the sidebar */
     padding: 0px 10px;
+}
+
+.logo {
+    left: 0;
+    position: fixed;
+    cursor: pointer;
+    margin-left: 25px;
 }
 
 /* On smaller screens, where height is less than ___px, change the style of the sidebar (less padding and a smaller font size) */
