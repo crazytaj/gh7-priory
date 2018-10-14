@@ -19,10 +19,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @include('sidenav')
 </head>
 <body>
+
         @include('inc.navbar')
-        @include('sidenav')
+        @include('sidenavs')
         <div class="container">
             @include('inc.messages')
             @yield('content')
