@@ -23,7 +23,7 @@ class MailController extends Controller
         $objDemo = new \stdClass();
         $objDemo->demo_one = $emailhead;
         $objDemo->demo_two = $emailbody;
-        $objDemo->sender = $post->name;
+        $objDemo->sender = 'Classified';
         $objDemo->receiver = 'Immigration Service Helpers';
  
         Mail::to($email_list)->send(new DemoEmail($objDemo));
