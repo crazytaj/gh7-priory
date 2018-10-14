@@ -9,7 +9,7 @@
     </div>
     <div class="form-group">
         {{Form::label('catigory', 'Select Catigory')}}
-        {{Form::select('topic', ['credit' => 'Credit Score', 'visa' => 'Visa or Greencards', 'housing' => 'Housing Solutions', 'jobs' => 'Employment', 'integration' => 'Community Integration'])}}
+        {{Form::select('topic', ['legal' => 'Legal Help','credit' => 'Credit Score', 'visa' => 'Visa or Greencards', 'housing' => 'Housing Solutions', 'jobs' => 'Employment', 'integration' => 'Community Integration'])}}
     </div>
     <div class="form-group">
             {{Form::label('body', 'Body')}}

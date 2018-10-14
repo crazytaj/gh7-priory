@@ -5,7 +5,13 @@
             <a href="/about">About</a>
             <a href="/services">Information</a>
             <a href="/posts">Form</a>
+            <div id="google_translate_element"></div><script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
           </div>
+        </div>
           
           <!-- Open Button -->
           

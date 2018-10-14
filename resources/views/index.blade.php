@@ -22,17 +22,9 @@
 </head>
 
 <div class="jumbotron p-4 main">
-<h1>{{$title}}</h1> 
+<h2>Welcome to Imigration Information Intigration hub (or Triple I)</h2> 
+<p>A hub that contains tons of resources in order to help immigrants fully intergrate into our society</p>
 <br>
-<h4>Pick your preferred language </h4>
-<br> <br>
-
-<div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        
  <!--  
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">English</p> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" class="responsive" alt="American Flag"></a>
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">Français</p> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAFVBMVEX///8AI5XtKTkAFJJ6gbrzg4ntHTC7o1gDAAAA/klEQVR4nO3QSQ0AIAADsHH6l4yKPUhaCc2oWTs9586aOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHy4ckD5KrN4eD2boIAAAAASUVORK5CYII=" class="responsive" alt="French Flag"></a>
@@ -46,7 +38,6 @@ function googleTranslateElementInit() {
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">Polski</p> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAADFBMVEX////cFDzup6/bAC47xqeuAAAA0UlEQVR4nO3QMQHAMAzAsLTjz3kI4qO3BEEzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPLms5mM1h5WcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICfICXKCnCAnyAlygpwgJ8gJcoKcICf8zMtmEUHJBe8AAAAASUVORK5CYII=" class="responsive" alt="Polish Flag"></a>
 <a class="btn btn-outline-dark custom m-4 p-3" href="" role="button"><p class="lead">Filipino</p> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/383px-Flag_of_the_Philippines.svg.png" class="responsive" alt="Flag of the Philippines"></a>
 BUTTONS FOR SELECTING LANGUAGE - DOES NOT WORK WITHOUT CLOUD TRANSLATION API (WHICH REQUIRES A CREDIT CARD)-->
-<br> <br> <br>
 
 @guest
 <p><a class="btn btn-primary btn-lg" href="/login" role="button">Login</a>&nbsp;<a class="btn btn-success btn-lg" href="/register" role="button">Register</a></p>

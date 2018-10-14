@@ -19,7 +19,7 @@ class EntrysController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('auth', ['except' =>['index', 'show']]);
+        $this->middleware('auth', ['except' =>['index', 'show']]);
     }
     /**
      * Display a listing of the resource.
@@ -28,7 +28,7 @@ class EntrysController extends Controller
      */
     public function index()
     {
-        $posts = Entry::orderBy('updated_at', 'desc')->paginate(10);
+        $posts = Entry::orderBy('updated_at', 'asc')->paginate(10);
         return view('information.index')->with('posts', $posts);
     }
 

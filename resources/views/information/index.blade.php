@@ -2,7 +2,7 @@
 
 @section('content')
 @if(!Auth::guest())
-<h1>Entries <a href="/posts/create" class="btn btn-primary float-right">Add Entry</a></h1>
+<h1>Entries <a href="/entry/create" class="btn btn-primary float-right">Add Entry</a></h1>
 @endif
 @if(count($posts) > 0)
     @foreach($posts as $post)
