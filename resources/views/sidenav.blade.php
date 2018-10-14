@@ -4,7 +4,7 @@
 <style>
 .sidenav {
     height: 75%; /* Full-height: remove this if you want "auto" height */
-    width: auto; /* Set the width of the sidebar */
+    width: 0; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -14,7 +14,7 @@
     padding-top: 20px;
     text-align: right;
     margin-top: 100px;
-
+    transition: 0.5s;
 }
 .override {
     color: #e0e1e2 !important;
@@ -28,11 +28,29 @@
     display: block;
     margin-bottom: 5px;
     margin-right: 5px;
+    transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 100px;
+}
+
+.openbtn {
+    position: fixed;
+    font-size: 30px;
+    cursor: pointer;
+    right: 0;
+    margin-right: 30px;
+    
 }
 
 /* Style page content */
@@ -56,9 +74,33 @@
 </head>
 <body>
 
-<div class="sidenav rounded-left" >
+<div id="mySidenav" class="sidenav rounded-left">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="/" class="override">Home</a>
   <a href="/about">About</a>
   <a href="/services">Information</a>
   <a href="/posts">Form</a>
 </div>
+
+<!-- Open Button -->
+
+<span class="openbtn" onclick="openNav()">&#9776; Expand</span> 
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "175px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
