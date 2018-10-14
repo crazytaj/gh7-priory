@@ -18,7 +18,7 @@ Route::get('/services', 'PagesController@services');
 Route::get('/php', function () {
     return redirect('http://localhost/phpmyadmin');
 });
-Route::get('mail/send', 'MailController@send');
+Route::get('mail/send/{post}', 'MailController@send');
 Route::get('/mail', 'MailController@create');
 Route::post('/mail', 'MailController@store');
 Route::get('/laravel', function() {
@@ -27,6 +27,9 @@ Route::get('/laravel', function() {
 Route::resource('comment', 'CommentsController');
 
 Route::resource('posts', 'PostsController');
+Route::get('test', function () {
+    return view('test');
+});
 
 
 Auth::routes();
@@ -39,8 +42,5 @@ Route::get('/english', function() {
 Route::get('/french', function() {
     $tr = new TranslateClient(null, 'fr');
     return redirect('/')->with('tr', $tr);
-});
-Route::get('/test', function() {
-    echo 'hi';
 });
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');

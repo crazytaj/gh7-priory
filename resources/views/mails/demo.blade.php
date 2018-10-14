@@ -6,7 +6,7 @@ Hello <i>{{ $demo->receiver }}</i>,
 <div>
 <p><b>Question Title:</b>&nbsp;{{ $demo->demo_one }}</p>
 <p><b>Question:</b>&nbsp;{{ $demo->demo_two }}</p>
-<p><b>Name:</b>&nbsp;{{ $demo->demo_three }}</p>
+<p><b>Name:</b>&nbsp;placeholder</p>
 </div>
  
 <p><u>Values passed by With method:</u></p>
